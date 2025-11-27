@@ -1,6 +1,10 @@
 name: Build
 
-on: [ push, pull_request ]
+on:
+  workflow_dispatch:  # This makes the workflow manual
+  # You can keep the original triggers if you want both manual and automatic
+  # push:
+  # pull_request:
 
 jobs:
   build:
